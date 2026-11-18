@@ -1,0 +1,41 @@
+{
+  "name": "pulsecheck",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "node scripts/write-fcm-worker.js && next build --webpack && node scripts/verify-static-export.js",
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@next/env": "^16.4.6",
+    "cookie-parser": "^1.4.7",
+    "express": "^5.3.0",
+    "firebase": "^11.0.2",
+    "firebase-admin": "13.6.0",
+    "lucide-react": "^0.468.0",
+    "next": "^16.4.6",
+    "nodemailer": "^10.6.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "recharts": "^2.15.0",
+    "undici": "^6.21.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.5",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "prettier": "^3.10.1",
+    "tailwindcss": "^4.3.5"
+  },
+  "overrides": {
+    "@grpc/grpc-js": "^1.13.6",
+    "uuid": "^11.1.1"
+  }
+}

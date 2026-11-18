@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@config "../../tailwind.config.js";
+body {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  background: #f8fafc;
+  color: #111827;
+}
+button,
+input {
+  font: inherit;
+}
